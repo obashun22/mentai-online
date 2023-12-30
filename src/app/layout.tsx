@@ -26,9 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="bg-background text-foreground p-4 h-screen">
-            {children}
-          </div>
+          <div className="bg-background text-foreground">{children}</div>
         </ThemeProvider>
       </body>
     </html>

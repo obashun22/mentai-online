@@ -2,18 +2,24 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ROUTES } from "@/constants/routes";
 import { Cog6ToothIcon } from "@heroicons/react/24/solid";
+import { Noto_Serif_JP } from "next/font/google";
+import clsx from "clsx";
+
+const notoSerifJP = Noto_Serif_JP({ subsets: ["latin"], weight: "500" });
 
 export default function Home() {
   return (
-    <div className="text-center">
-      <div className="text-right">
+    <div className="p-4 h-screen text-center flex flex-col justify-center">
+      <div className="fixed top-4 right-4">
         <Button variant="secondary">
-          <Cog6ToothIcon className="w-5 h-5 " />
+          <Cog6ToothIcon className="w-5 h-5" />
           設定
         </Button>
       </div>
-      <div>
-        <h1>面接対策オンライン</h1>
+      <div className="">
+        <h1 className={clsx(notoSerifJP.className, "text-5xl", "pb-8")}>
+          面接対策オンライン
+        </h1>
         <div>
           <Button className="text-white">面接を開始</Button>
         </div>
