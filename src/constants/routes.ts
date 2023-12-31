@@ -1,10 +1,10 @@
 export const ROUTES = {
-  HOME: "/home",
+  HOME: "/",
   READY: "/ready",
   INTERVIEW: "/interview",
-  SETTING: "/setting",
+  SETTING: "/settings",
   ABOUT: "/about",
-  TERM: "/term",
+  TERM: "/terms",
   PRIVACY: "/privacy",
   LICENSE: "/license",
 };
